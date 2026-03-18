@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RXT NFZ - Free Fire Tournament App</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.app-icon {
+    width: 120px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff3c00;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+.tagline {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat-box {
+    background: #1a1a1a;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff3c00, #ff8c00);
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* CAROUSEL */
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 15px;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="https://i.ibb.co.com/LznQJYV8/image.jpg" class="app-icon">
+    <h1>RXT NFZ</h1>
+    <p class="tagline">Play Free Fire Matches • Win Real Money • Instant Withdraw</p>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>10K+</h3>
+            <p>Downloads</p>
+        </div>
+        <div class="stat-box">
+            <h3>7600+</h3>
+            <p>Total Users</p>
+        </div>
+    </div>
+
+    <a href="https://www.mediafire.com/file/ccd7b0cx32iix86/RXT_NFZ_TOUR_1.0.apk/file" class="download-btn">
+        Download for Android
+    </a>
+</div>
+
+<!-- CAROUSEL -->
+<div class="carousel">
+    <img src="https://i.ibb.co.com/23n0dnqM/image.jpg" class="active">
+    <img src="https://i.ibb.co.com/d4KJZnbX/image.jpg">
+    <img src="https://i.ibb.co.com/tTzSydkT/image.jpg">
+    <img src="https://i.ibb.co.com/99WcWH3b/image.jpg">
+    <img src="https://i.ibb.co.com/5h9082Vp/image.jpg">
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <h2>🔥 App Features</h2>
+
+    <div class="feature-list">
+        <div class="feature">🎮 Play Free Matches</div>
+        <div class="feature">💰 Earn Real Money</div>
+        <div class="feature">🏆 Daily Tournaments</div>
+        <div class="feature">⚡ Instant Withdraw</div>
+        <div class="feature">📱 bKash / Nagad / Rocket Support</div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 RXT NFZ. All Rights Reserved.
+</div>
+
+<script>
+let index = 0;
+const images = document.querySelectorAll(".carousel img");
+
+function slide() {
+    images.forEach(img => img.classList.remove("active"));
+    index = (index + 1) % images.length;
+    images[index].classList.add("active");
+}
+
+setInterval(slide, 2000);
+</script>
+
+</body>
+</html>
